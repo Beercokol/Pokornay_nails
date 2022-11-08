@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap") format('truetype');
+}
+html * {box-sizing: content-box}
+/*::-webkit-scrollbar {*/
+/*    width: 0;*/
+/*}*/
+html {
+    max-width: 100%;
+    /*overflow-x: hidden;*/
+
+}
+body {
+    background: #D9C5B4;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+body>*{
+    padding: 0 50px;
+}
+hr {
+    border: none;
+    height: 1px;
+    background: #261F18;
+}
+
+.title_img {
+    width: 100vw;
+    height: 100vh;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.link_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    width: 300px;
+
+}
+.link_container > a {
+    margin-right: 21px;
+}
+.flex_nav {
+   display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+
+}
+.flex_nav > h3 {
+    margin-right: 21px;
+    line-height: 40px;
+}
+/*Указали кнопкам через родителя размеры, отступы и цвета*/
+.flex_nav > button {
+    margin-right: 70px;
+    padding: 9px 26px;
+    height: 40px;
+    background: #D9C5B4;
+    border-radius: 6px;
+    color: #261F18;
+    border: 1px solid #594E45;
+    font-size: 17px;
+}
+
+.flex_nav > button:hover {
+    background: #594E45;
+    color: #D9C5B4;
+
+}
+.home_bt {
+    background: no-repeat url("./icons/home_button.svg");
+    position: fixed;
+    right: 5px;
+    bottom: 45px;
+    width: 1px;
+    height: 50px;
+    border: none;
+    z-index: 10000;
+
+}
+/*указали картинку как задний фон у блока и расставили флексбоксы*/
+.main_title {
+    height: 724px;
+    background:  no-repeat url("./icons/img.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #8C6F5E;
+
+}
+.main_title > h1 {
+    font-size: 80px;
+    font-style: italic;
+}
+.main_title > h3 {
+    font-style: italic;
+    font-size: 28px;
+
+}
+.main_title > button{
+    background: #8C6F5E;
+    color: #261F18;
+    padding: 9px 26px;
+    border-radius: 6px;
+    border: 1px solid #594E45;
+    font-size: 20px;
+    font-style: italic;
+
+}
+.main_title > button:hover {
+    background: #594E45;
+    color: #D9C5B4;
+}
+.info_master {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: transparent;
+    margin-top: 70px;
+    height: 100%;
+}
+.info_container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    position: relative;
+    background: linear-gradient(to top ,#9C9094 0%,#A29396 100%);
+}
+.info_container > div {
+    width: 50%;
+}
+
+.info_container > h2 {
+    position: absolute;
+    font-size: 94px;
+    color: rgba(213, 212, 212, 0.22);
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-weight: 400;
+}
+.info_container > h2:after{
+    content: "ОБО МНЕ"; position: absolute;
+    color: #FFFFFF;
+    font-size: 52px;
+    font-weight: 400;
+    display: block;
+    top: 55px;
+    left: 20px;
+}
+/*.info_master>*:first-child {*/
+/*    align-self: flex-start;*/
+/*    !*margin-left: 380px;*!*/
+/*    color: #FFFFFF;*/
+/*    font-size: 52px;*/
+/*}*/
+.info_master > h3 {
+    color: #261F18;
+    font-size: 34px;
+    margin: 0;
+    align-self: center;
+    font-weight: 400;
+    justify-content: center;
+}
+.info_master > h3:first-child {
+    margin-top: 165px;
+}
+.info_master > h3+h3 {
+    margin-bottom: 64px;
+}
+.info_master>* {
+    width: 100%;
+}
+.list_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.list_info {
+    color: #FFFFFF;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+.list_info > img {
+    margin-right: 36px;
+}
+.work_container {
+    padding: 0;
+    margin-top: 74px;
+    position: relative;
+}
+#slider_button_down  {
+    background:no-repeat url("icons/slider_button_down.svg");
+    width: 15px;
+    height: 30px;
+    border: 0;
+    margin-right: 50px;
+
+}
+#slider_button_up {
+background: no-repeat url("icons/slider_button_up.svg");
+    width: 15px;
+    height: 35px;
+    border: 0;
+    margin-left:  50px;
+}
+.slider_container {
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work_bar{
+    width: 855px;
+    height: 619px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work_bar > img {
+    width: 411px;
+    height: 606px;
+}
+.work_clients {
+    display: flex;
+    justify-content: space-between;
+}
+.work_clients:first-child{
+    margin-right: 3px;
+}
+/*todo: попытался сделать линию абсолютом, но не вижу её в принципе*/
+.hr_line {
+    background: #594E45;
+    height: 3px;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.work_footer {
+    height: 164px;
+    background: #8C6F5E;
+    transform: rotate(2deg);
+}
+/*todo: попытался сделать нужные наклоны линиям, но пока что не могу их спозиционировать*/
+.hr_line_down {
+    border: none;
+    height: 1px;
+    width: 30%;
+    background: #F3E2D3;
+    transform: rotate(9deg);
+    display: flex;
+    justify-content: flex-start;
+}
+.hr_line_up {
+    border: none;
+    height: 1px;
+    background: #594E45;
+    transform: rotate(5deg);
+    width: 30%;
+
+}
+.my_work {
+    color: #F3E2D3;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+}
+.price_list{
+    background: no-repeat url("./icons/price_image.svg");
+    height: 100vh;
+}
+.price_list > h3 {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    transform: rotate(-90deg);
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 323px;
+    height: 85px;
+
+}
+.price_image {
+    position: relative;
+    margin: 0;
+}
+.info_price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*width: 780px;*/
+
+
+
+}
+article {
+    background: #261F18; opacity: 73%;
+    color: #D9C5B4;
+    font-size: 22px;
+    border: black;
+    border-radius: 4px;
+    width: 337px;
+    height: 78px;
+
+}
+.service_price {
+    background: #594E45A6;
+    height: 157px;
+}
+.service_price:first-child {
+    color:#261F18;
+}
+.service_price >p+p {
+    color: #D9C5B4;
+}
+.service_price > button {
+  background: #8C6F5E;
+    color: #F2F2F2;
+    width: 210px;
+    height: 41px;
+    border: 1px;
+    border-radius: 6px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+/*.info_master > ul {*/
+/*    margin-top: 65px;*/
+/*    padding: 0;*/
+
+/*}*/
+/*.info_master > ul> li {*/
+/*    margin-bottom: 40px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+/*li {*/
+/*    list-style: none;*/
+/*}*/
+/*li:before {*/
+/*    content: url("/icons/newli.svg");*/
+/*}*/
+
+.nav_bt{
+
+}
+
+
