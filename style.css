@@ -277,6 +277,7 @@ display: flex;
 .price_list{
     background: no-repeat url("./icons/price_image.svg");
     height: 100vh;
+    display: flex;
 }
 .price_list > h3 {
     font-size: 40px;
@@ -300,6 +301,8 @@ display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 78px 63px;
+
 /*Я не понимаю о чем вы*/
 
 
@@ -317,7 +320,9 @@ article {
 }
 .service_price {
     background: #594E45A6;
-    height: 157px;
+    height: 200px;
+    width: 337px
+
 }
 .service_price:first-child {
     color:#261F18;
