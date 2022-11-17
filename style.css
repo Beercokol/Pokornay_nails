@@ -2,7 +2,8 @@
     font-family: 'Ubuntu';
     src: url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap") format('truetype');
 }
-html * {box-sizing: content-box}
+html * {    box-sizing: border-box;
+}
 /*::-webkit-scrollbar {*/
 /*    width: 0;*/
 /*}*/
@@ -277,19 +278,19 @@ display: flex;
 .price_list{
     background: no-repeat url("./icons/price_image.svg");
     height: 100vh;
+    display: flex;
 }
 .price_list > h3 {
     font-size: 40px;
     font-style: italic;
     font-weight: 400;
     transform: rotate(-90deg);
-    margin: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 323px;
     height: 85px;
-
+    margin: 110px 0 0 0;
 }
 .price_image {
     position: relative;
@@ -297,13 +298,23 @@ display: flex;
 }
 .info_price {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info_price > div {
+    margin: 80px;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-/*Я не понимаю о чем вы*/
+    gap: 20px 20px;
+}
 
-
-
+.info_price section {
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
 }
 article {
     background: #261F18; opacity: 73%;
@@ -311,13 +322,15 @@ article {
     font-size: 22px;
     border: black;
     border-radius: 4px;
-    width: 337px;
     height: 78px;
+    width: 100%;
+    padding: 8px;
 
 }
 .service_price {
     background: #594E45A6;
     height: 157px;
+    width: 100%;
 }
 .service_price:first-child {
     color:#261F18;
